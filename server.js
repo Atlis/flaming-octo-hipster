@@ -20,7 +20,7 @@ app.get('/scrape', function(req, res){
             var data_216 = $("a[data-id~='216']").parent().text().match(/\(([^)]+)\)/)[1].replace(",","");
             json.data = [dateTime, data_214, data_212, data_211, data_215, data_213, data_216];
 		}
-        fs.appendFile('output.json', json.data, function(err){
+        fs.appendFile('output.json', json.data + "\n", function(err){
         	console.log('Data saved.');
         })
         res.send('Check your console!')
