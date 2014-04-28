@@ -4,11 +4,9 @@ var app     = express();
 
 app.get('/scrape', function(req, res){
     var content;
-    // First I want to read the file
-    fs.readFile('output.json', function read(err, data) {
-        if (err) {
-            throw err;
-        }
+    fs.readFile('/root/output.json', function read(err, data) {
+        if (err) throw err;
+        res.header("Content-Type", "text/plain");
         res.send(data);
     }); 
 })
