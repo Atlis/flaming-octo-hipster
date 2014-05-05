@@ -43,7 +43,7 @@ function retrieveData() {
             
             json.data = [dateTime, data_214, data_212, data_211, data_215, data_213, data_216];
         }
-        fs.appendFile('offering.txt', json.data + "\n", function(err){
+        fs.appendFile('/root/offering.txt', json.data + "\n", function(err){
             console.log('Data saved.');
         })
     })
