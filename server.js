@@ -1,7 +1,7 @@
 var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
-var random = require('./random');
+/* var random = require('./random');
 
 function randomTargetTime(minTime, targetTime, maxTime) {
     i = 0;
@@ -24,7 +24,7 @@ function timeOut() {
     setTimeout(function() {
         retrieveData();
     }, randomTargetTime(2, 10, 18));
-}
+} */
 
 function retrieveData() {
     url = 'http://www.kijiji.ca/b-apartments-condos/ottawa/c37l1700185?ad=offering';
@@ -49,4 +49,5 @@ function retrieveData() {
     })
 }
 
-timeOut();
+//timeOut();
+retrieveData();
