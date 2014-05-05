@@ -2,23 +2,13 @@ var express = require('express');
 var fs = require('fs');
 var app     = express();
 
-app.get('/data', function(req, res){
-    var content;
-    fs.readFile('/root/output.json', function read(err, data) {
-        if (err) throw err;
-        res.header("Content-Type", "text/plain");
-        res.send(data);
-    }); 
-});
-
-
 app.get('/obj', function(req, res){
     var content;
     fs.readFile('/root/obj.txt', function read(err, data) {
         if (err) throw err;
         res.header("Content-Type", "text/plain");
         res.send(data);
-    }); 
+    });
 });
 
 app.listen('8081');
