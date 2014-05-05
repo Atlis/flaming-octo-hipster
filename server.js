@@ -33,7 +33,7 @@ function retrieveData() {
             var $ = cheerio.load(html);
             var json = {};
             var dateTime = new Date();
-            dateTime = dateTime.toLocaleString();
+            dateTime = dateTime.toLocaleDateString() + " | " + dateTime.toLocaleTimeString();
             var data_214 = $("a[data-id~='214']").parent().text().match(/\(([^)]+)\)/)[1].replace(",","");
             var data_212 = $("a[data-id~='212']").parent().text().match(/\(([^)]+)\)/)[1].replace(",","");
             var data_211 = $("a[data-id~='211']").parent().text().match(/\(([^)]+)\)/)[1].replace(",","");
@@ -43,7 +43,7 @@ function retrieveData() {
             
             json.data = [dateTime, data_214, data_212, data_211, data_215, data_213, data_216];
         }
-        fs.appendFile('offering.json', json.data + "\n", function(err){
+        fs.appendFile('offering.txt', json.data + "\n", function(err){
             console.log('Data saved.');
         })
     })
