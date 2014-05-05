@@ -22,56 +22,9 @@ function randomTargetTime(minTime, targetTime, maxTime) {
 
 function timeOut() {
     setTimeout(function() {
-        retrieveData();
+        lookObj(1,"obj.txt");
     }, randomTargetTime(2, 10, 18));
 }
-
-function retrieveData() {
-    url = 'http://www.kijiji.ca/b-apartments-condos/ottawa/c37l1700185?ad=offering';
-    request(url, function(error, response, html){
-        if(!error){
-            var $ = cheerio.load(html);
-            var json = {};
-            var dateTime = new Date();
-            dateTime = dateTime.toLocaleString();
-            var data_214 = $("a[data-id~='214']").parent().text().match(/\(([^)]+)\)/)[1].replace(",","");
-            var data_212 = $("a[data-id~='212']").parent().text().match(/\(([^)]+)\)/)[1].replace(",","");
-            var data_211 = $("a[data-id~='211']").parent().text().match(/\(([^)]+)\)/)[1].replace(",","");
-            var data_215 = $("a[data-id~='215']").parent().text().match(/\(([^)]+)\)/)[1].replace(",","");
-            var data_213 = $("a[data-id~='213']").parent().text().match(/\(([^)]+)\)/)[1].replace(",","");
-            var data_216 = $("a[data-id~='216']").parent().text().match(/\(([^)]+)\)/)[1].replace(",","");
-            
-            json.data = [dateTime, data_214, data_212, data_211, data_215, data_213, data_216];
-        }
-        fs.appendFile('offering.json', json.data + "\n", function(err){
-            console.log('Data saved.');
-        })
-    })
-}
-
-
-
-
-function visitObj(file, index) {
-    var array = fs.readFileSync(file).toString().split("\n");
-    if (array[index]) {
-        var url = array[index];
-        console.log(url);
-    } else {
-        return;
-    }
-    request("http://www.kijiji.ca" + url, function(error, response, html){
-        if(!error){
-            var $ = cheerio.load(html);
-            var visits = $(".ad-visits").text();//.replace(",","")
-            console.log("_" + visits + "_");
-            setTimeout(function() {
-                visitObj(file, index+1);
-            }, randomTargetTime(2, 5, 10), i);
-        }
-    });
-}
-
 
 function lookObj(page, file) {
     var url = "http://www.kijiji.ca/b-apartments-condos/ottawa/page-" + page + "/c37l1700185?ad=offering";
@@ -87,6 +40,8 @@ function lookObj(page, file) {
             var objCount = obj.length;
             var now = new Date();
             $(obj.get().reverse()).each(function(index){
+                
+                // RETRIEVE DATA
                 objUrl = $(this).attr("data-vip-url");
                 objPosted = $(this).find("td.posted").text();
                 if (objPosted.indexOf("minutes") > -1) {
@@ -99,7 +54,7 @@ function lookObj(page, file) {
                 
                 var data = objUrl + " | " + dateTime.toLocaleDateString() + " | " + dateTime.toLocaleTimeString();
                 
-                // SAVE
+                // WRITE
                 var write = false;
                 for (var line = 0; line < lines.length; ++line) {
                     if (lines[line].indexOf(objUrl) > -1) {
@@ -110,8 +65,7 @@ function lookObj(page, file) {
                 }
                 if (!write) lines.unshift(data);
                 
-                
-                
+                // GO TO NEXT PAGE
                 if (index == objCount-1) {
                     setTimeout(function() {
                         lookObj(page+1, file);
@@ -119,6 +73,7 @@ function lookObj(page, file) {
                 }
             });
             
+            // SAVE
             fs.writeFile(file, lines.join("\n"), function(err) {});
             console.log('Page ' + page + ' saved.');
         }
@@ -126,6 +81,5 @@ function lookObj(page, file) {
     
     
 }
-//timeOut();
-lookObj(1,"test2.txt");
-//visitObj("test2.txt",0);
+
+timeOut();
