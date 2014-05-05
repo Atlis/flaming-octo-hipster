@@ -22,7 +22,7 @@ function randomTargetTime(minTime, targetTime, maxTime) {
 
 function timeOut() {
     setTimeout(function() {
-        lookObj(1,"obj.txt");
+        lookObj(1,"/root/obj.txt");
     }, randomTargetTime(2, 10, 18));
 }
 
