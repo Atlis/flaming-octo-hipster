@@ -1,1 +1,289 @@
-[]
+[
+	{
+		"url": "/v-appartement-condo-studio-2-1-2/ville-de-montreal/metro-sauve-2-12-1-chambre-fermee-libre-1er-juin/594118464",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:26:07"
+	},
+	{
+		"url": "/v-appartement-condo-studio-2-1-2/ville-de-montreal/fully-renovated-and-furnished-in-st-leonard/594117523",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:22:07"
+	},
+	{
+		"url": "/v-appartement-condo-studio-1-1-2/ville-de-montreal/logement-1-1-2-a-louer-a-ahuntsic/594117430",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:22:07"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/lachine-2-bedroom-heat-hotwater-fridge-and-stove-included/594117226",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:21:07"
+	},
+	{
+		"url": "/v-appartement-condo-studio-1-1-2/ville-de-montreal/metro-sauve-1-1-2-libre-1er-juillet/594117185",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:21:07"
+	},
+	{
+		"url": "/v-appartement-condo-3-1-2/ville-de-montreal/logement-3-1-2-a-louer-a-ahuntsic/594117079",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:21:07"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/4-1-2-pointe-aux-trembles/572389452",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:20:07"
+	},
+	{
+		"url": "/v-appartement-condo-3-1-2/ville-de-montreal/3-1-2-plateau-metro-laurier-calme-tout-inclus-01-07/591667407",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:19:07"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/lachine-front-2-bedroom-heat-hotwater-fridge-and-stove-included/594116267",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:17:07"
+	},
+	{
+		"url": "/v-appartement-condo-5-1-2/ville-de-montreal/magnifique-5-1-2-stationnement/594116134",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:17:07"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/825-only-for-this-super-large-4-1-2-on-linton-street/594116057",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:17:07"
+	},
+	{
+		"url": "/v-appartement-condo-5-1-2/ville-de-montreal/5-1-2-for-rent-in-ville-emard/594115964",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:16:07"
+	},
+	{
+		"url": "/v-appartement-condo-3-1-2/ville-de-montreal/large-3-5-metro-cote-st-cath-renov-all-new/594115819",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:16:07"
+	},
+	{
+		"url": "/v-appartement-condo-3-1-2/ville-de-montreal/ideal-for-student-3-near-universite-of-montreal-in-the-heart/594115784",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:16:07"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/nice-4-1-2-in-plateau-near-parc-lafontaine-and-mont-royal/593620505",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:16:07"
+	},
+	{
+		"url": "/v-appartement-condo-studio-1-1-2/ville-de-montreal/11-2-a-louer/594115302",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:15:07"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/luxueux-4-1-2-proche-hopital-parcs-centres-commerciaux-bus-train/594115287",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:14:07"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/4-1-2-meuble-tout-compris-berri-uqam-1er-aout/594115191",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:13:07"
+	},
+	{
+		"url": "/v-appartement-condo-studio-2-1-2/ville-de-montreal/downtown-1-bedroom-heat-hotwater-fridge-and-stove-included/594115090",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:13:07"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/4-1-2-au-niveau-du-sol-a-pointe-st-charles-1er-juillet/594114833",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:12:07"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/beautiful-4-1-2-condo-in-st-laurent-near-du-college-metro/594114573",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:10:48"
+	},
+	{
+		"url": "/v-appartement-condo-3-1-2/ville-de-montreal/3-1-2-libre-1e-juillet/594114539",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:10:48"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/a-louer-4-meuble-au-plateau-logement-impeccable-et-entierem/594114498",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:10:48"
+	},
+	{
+		"url": "/v-appartement-condo-5-1-2/ville-de-montreal/5-close-to-concordia-mcgill-college-guy-atwater-metro/594114461",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:10:48"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/condo-moderne-au-vieux-port-aout/594114323",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:09:48"
+	},
+	{
+		"url": "/v-appartement-condo-3-1-2/ville-de-montreal/beau-3-1-2-tetrauville-juillet/594114102",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:08:48"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/41-2-apartment-for-rent/594113441",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:08:48"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/a-5-min-du-metro-st-henri/594114047",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:08:48"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/4-1-2-libre-1e-juillet/594113763",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:07:48"
+	},
+	{
+		"url": "/v-appartement-condo-5-1-2/ville-de-montreal/720-boulevard-montpellier-saint-laurent-qc-h4l-5b5-canada/594113453",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:05:48"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/grand-4-1-2-a-louer-ahuntsic-1er-juillet-640/592327587",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:05:48"
+	},
+	{
+		"url": "/v-appartement-condo-studio-2-1-2/ville-de-montreal/bright-large-3-1-2-apartment-in-triplex-in-lasalle/594112514",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:02:48"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/maisonneuve-park-4-1-2-very-clean-and-quiet-good-environment/593729372",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:02:48"
+	},
+	{
+		"url": "/v-appartement-condo-3-1-2/ville-de-montreal/superbe-3-1-2-a-deux-pas-du-metro-et-a-10-min-du-centre-ville/594112294",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:01:48"
+	},
+	{
+		"url": "/v-appartement-condo-3-1-2/ville-de-montreal/chambre-fermee-poele-frigo-quartier-ahuntsic-metro/594112247",
+		"date": "Sunday, May 18, 2014",
+		"time": "16:01:48"
+	},
+	{
+		"url": "/v-appartement-condo-5-1-2/ville-de-montreal/appartement-haut-dun-duplex-a-louer/594111936",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:59:48"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/4-1-2-lower-duplex-with-courtyard-5-minutes-from-downtown/594111813",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:59:48"
+	},
+	{
+		"url": "/v-appartement-condo-3-1-2/ville-de-montreal/logis-3-1-2-chauffe-eclaire-libre-1-juillet/594111714",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:59:48"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/4-1-2-3210-gouin-e-pres-ahunstic-chauffe-semi-sousol/594111214",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:56:48"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/professionally-managed-huge-saint-laurent/594084049",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:52:48"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/4-1-2-plateau-mont-royal/594077289",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:47:33"
+	},
+	{
+		"url": "/v-appartement-condo-3-1-2/ville-de-montreal/3-1-2-a-lasalle/594107625",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:42:33"
+	},
+	{
+		"url": "/v-appartement-condo-6-1-2-et-plus/ville-de-montreal/charmant-6-1-2-renove-3-chambres-chauffage-inclus-mtl-ouest/594107571",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:42:33"
+	},
+	{
+		"url": "/v-appartement-condo-5-1-2/ville-de-montreal/6-au-metro-beaudry/594107513",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:42:33"
+	},
+	{
+		"url": "/v-appartement-condo-studio-1-1-2/ville-de-montreal/grand-1-1-2/594107499",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:42:33"
+	},
+	{
+		"url": "/v-appartement-condo-3-1-2/ville-de-montreal/3-1-2-metro-jarry/594107219",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:41:33"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/4-1-2/594106667",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:38:33"
+	},
+	{
+		"url": "/v-appartement-condo-3-1-2/ville-de-montreal/lowney-condos-a-louer-a-griffintown-centreville/594106169",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:36:33"
+	},
+	{
+		"url": "/v-appartement-condo-5-1-2/ville-de-montreal/spacious-5-1-2-1100-square-feet-atwater-market/594105749",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:35:33",
+		"tag": "log",
+		"lat": "45.4772004",
+		"lng": "-73.5670412",
+		"log": [
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "16:30:25",
+				"visits": 9
+			}
+		]
+	},
+	{
+		"url": "/v-appartement-condo-5-1-2/ville-de-montreal/verrieres-sur-le-fleuve-phase-4/593856347",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:34:33"
+	},
+	{
+		"url": "/v-appartement-condo-5-1-2/ville-de-montreal/apt-meuble-au-metro-beaudry/594105213",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:33:33"
+	},
+	{
+		"url": "/v-appartement-condo-3-1-2/ville-de-montreal/quartier-rosemont-un-3-1-2-charmant-et-ensoleille/594104695",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:31:33"
+	},
+	{
+		"url": "/v-appartement-condo-4-1-2/ville-de-montreal/4-1-2-rue-fleury-a-louer-pour-juin/594104758",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:31:33",
+		"tag": "log"
+	},
+	{
+		"url": "/v-appartement-condo-studio-1-1-2/ville-de-montreal/studio-fraichement-renove-montreal-centre-ville/594104293",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:30:33",
+		"tag": "log"
+	},
+	{
+		"url": "/v-appartement-condo-3-1-2/ville-de-montreal/superbe-condo-de-style-loft-urbain-situe-dans-le-vieux-montreal/594104257",
+		"date": "Sunday, May 18, 2014",
+		"time": "15:30:33"
+	}
+]
