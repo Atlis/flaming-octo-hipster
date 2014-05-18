@@ -43,8 +43,7 @@ function listingAds(page, file) {
     var adsList = JSON.parse(fs.readFileSync(file));
     
     var url = "http://www.zkzizjzizjzi.ca".replace(/z/g,"");
-    url = url + "/b-apartments-condos/" + city + "/page-" + page + "/c37l1700185?ad=offering";
-    
+    url = url + "/b-apartments-condos/" + city.name + "/page-" + page + "/c37l" + city.code + "?ad=offering";
     request(url, function(error, response, html){
         if(!error){
             var $ = cheerio.load(html);
@@ -106,9 +105,10 @@ function listingAds(page, file) {
                         data.date = dateTime.toLocaleDateString();
                         data.time = dateTime.toLocaleTimeString();
                         
-                        // One out of 10 ads will be logged.
+                        // One out of n ads will be logged.
                         // The chosen ads receive a log tag so it is possible to trace them back.
-                        if (getRandomInt(0, 9) == 0) data.tag = "log";
+                        var n = 15;
+                        if (getRandomInt(0, n - 1) == 0) data.tag = "log";
                         
                         // The new ad is added at the top of the array.
                         adsList.unshift(data);
@@ -131,8 +131,17 @@ function listingAds(page, file) {
     });
 }
 
-var city = "ottawa";
+var city = {}
+city.name = "ville-de-montreal";
+city.code = 1700281;
+
+//city.name = "grand-montreal";
+//city.code = 80002;
+
+//city.name = "ottawa";
+//city.code = 185;
+
 var filePath = os.type() == 'Windows_NT' ? "" : "/root/";
-var fileName = filePath + "data-" + city + "-post.txt";
+var fileName = filePath + "ads-" + city.name + ".txt";
 
 timeOut();

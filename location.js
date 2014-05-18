@@ -85,8 +85,8 @@ function writeJSON(ad) {
   phantom.exit();
 }
 
-var city = "ottawa";
-var adsListFile = "data-" + city + "-post.txt";
+var city = "ville-de-montreal";
+var adsListFile =  "ads-" + city + ".txt";
 var adsList = readJSON(adsListFile);
 var count = adsList.length;
 
