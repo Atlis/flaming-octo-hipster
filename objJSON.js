@@ -7,6 +7,21 @@ var cheerio = require('cheerio');
 var random = require('./random');
 
 
+// DATE AND TIME FUNCTIONS
+function pad(num, size) {
+    var s = "000000000" + num;
+    return s.substr(s.length-size);
+}
+
+function getDate(date) {
+    return date.getFullYear() + "-" + pad(date.getMonth()+1,2) + "-" + pad(date.getDate(),2);
+}
+
+function getTime(date) {
+    return pad(date.getHours(),2) + ":" + pad(date.getMinutes(),2) + ":" + pad(date.getSeconds(),2);
+}
+
+// RANDOM FUNCTIONS
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -31,7 +46,7 @@ function randomTargetTime(minTime, targetTime, maxTime) {
 function timeOut() {
     setTimeout(function() {
         listingAds(7, fileName);
-    }, randomTargetTime(2, 10, 18));
+    }, randomTargetTime(2, 5, 10));
 }
 
 
@@ -71,8 +86,8 @@ function listingAds(page, file) {
                                 
                                 // Creates a new log entry.
                                 var log = {};
-                                log.date = now.toLocaleDateString();
-                                log.time = now.toLocaleTimeString();
+                                log.date = getDate(now);
+                                log.time = getTime(now);
                                 log.page = page;
                                 
                                 // The new log is added at the bottom of the logs array.
@@ -102,12 +117,12 @@ function listingAds(page, file) {
                         // Creates a new ad entry.
                         var data = {};
                         data.url = adUrl;
-                        data.date = dateTime.toLocaleDateString();
-                        data.time = dateTime.toLocaleTimeString();
+                        data.date = getDate(dateTime);
+                        data.time = getTime(dateTime);
                         
                         // One out of n ads will be logged.
                         // The chosen ads receive a log tag so it is possible to trace them back.
-                        var n = 15;
+                        var n = 10;
                         if (getRandomInt(0, n - 1) == 0) data.tag = "log";
                         
                         // The new ad is added at the top of the array.
@@ -119,7 +134,7 @@ function listingAds(page, file) {
                 if (index == adsCount-1) {
                     setTimeout(function() {
                         listingAds(page - 1, file);
-                    }, randomTargetTime(5, 15, 20));
+                    }, randomTargetTime(2, 5, 10));
                 }
             });
             
@@ -141,7 +156,7 @@ city.code = 1700281;
 //city.name = "ottawa";
 //city.code = 185;
 
-var filePath = os.type() == 'Windows_NT' ? "" : "/root/";
-var fileName = filePath + "ads-" + city.name + ".txt";
+var filePath = os.type() == 'Windows_NT' ? "./data/" : "./data/";
+var fileName = filePath + "ads-" + city.name + ".json";
 
 timeOut();
