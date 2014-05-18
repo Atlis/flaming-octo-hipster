@@ -1,0 +1,302 @@
+[
+	{
+		"url": "/v-2-bedroom-apartments-condos/ottawa/available-starting-june-1rst-downtown-hull-near-parks-and-bridge/594060759",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:47:33"
+	},
+	{
+		"url": "/v-2-bedroom-apartments-condos/ottawa/ideal-spacious-2-bedroom-apt-vacant-now/594060562",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:46:33"
+	},
+	{
+		"url": "/v-bachelor-studio-apartments-condos/ottawa/bachelor-studio-centretown-downtown-montclair-elgin-cooper/594058445",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:38:33"
+	},
+	{
+		"url": "/v-1-bedroom-apartments-condos/ottawa/newly-renovated-1-bd-south-facing-with-huge-balcony/594057201",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:34:33"
+	},
+	{
+		"url": "/v-2-bedroom-apartments-condos/ottawa/great-location-2bed-2bath-luxury-condo-avail-aug-1st/594057091",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:34:33"
+	},
+	{
+		"url": "/v-1-bedroom-apartments-condos/ottawa/just-5-minutes-walking-to-ottawa-river/594057156",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:34:33"
+	},
+	{
+		"url": "/v-4-plus-bedroom-apartments-condos/ottawa/6-bedroom-student-unit-available-sept-1-2014/594024406",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:33:33"
+	},
+	{
+		"url": "/v-1-bedroom-den-apartments-condos/ottawa/canal-ottawa-centre-beautiful-large-newly-renovated-apartment/594014568",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:33:33",
+		"tag": "log",
+		"log": [
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "12:53:36",
+				"page": 1
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:14:16",
+				"visits": 2
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:14:26",
+				"visits": 2
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:26:50",
+				"visits": 4
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:27:05",
+				"visits": 4
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:35:55",
+				"visits": 6
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:36:07",
+				"visits": 6
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:48:00",
+				"visits": 8
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:48:03",
+				"visits": 8
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:48:08",
+				"visits": 8
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:48:12",
+				"visits": 8
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:48:16",
+				"visits": 8
+			}
+		],
+		"lat": "45.4111665",
+		"lng": "-75.6823203"
+	},
+	{
+		"url": "/v-1-bedroom-apartments-condos/ottawa/furnished-large-master-bedroom-available-immediately-for-female/594056358",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:31:33"
+	},
+	{
+		"url": "/v-2-bedroom-apartments-condos/ottawa/amazing-view-2bed-2bath-with-balcony-parking-avail-aug-1st/594055725",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:29:33"
+	},
+	{
+		"url": "/v-2-bedroom-apartments-condos/ottawa/secteur-des-hautes-plaines-1er-juin-et-1er-aout/594055570",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:28:33"
+	},
+	{
+		"url": "/v-4-plus-bedroom-apartments-condos/ottawa/glebe-annex-1-2-price-1000-for-june/594054137",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:23:33"
+	},
+	{
+		"url": "/v-3-bedroom-apartments-condos/ottawa/apartment-for-rent-in-the-heart-of-westboro-excellent-location/594053788",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:22:33"
+	},
+	{
+		"url": "/v-bachelor-studio-apartments-condos/ottawa/beautiful-renovated-bachelor-apartment-move-in-special/580358755",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:20:33"
+	},
+	{
+		"url": "/v-1-bedroom-apartments-condos/ottawa/beautiful-1-bedroom-apartment-move-in-special/580359622",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:19:33"
+	},
+	{
+		"url": "/v-2-bedroom-apartments-condos/ottawa/beautiful-2-bedroom-apartment/592825594",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:19:33"
+	},
+	{
+		"url": "/v-3-bedroom-apartments-condos/ottawa/beautiful-3-bedroom-apartment/592826814",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:18:33"
+	},
+	{
+		"url": "/v-3-bedroom-apartments-condos/ottawa/3-bedroom-near-carleton-univ-1600sqft-all-inclusive/591879582",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:17:33"
+	},
+	{
+		"url": "/v-1-bedroom-apartments-condos/ottawa/1br-parking-enclosed-balcony-storage-heat-and-water-incl/594052197",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:16:33"
+	},
+	{
+		"url": "/v-1-bedroom-apartments-condos/ottawa/charming-basement-unit-available-june-or-july-1st/594022041",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:15:33"
+	},
+	{
+		"url": "/v-1-bedroom-den-apartments-condos/ottawa/1-bed-large-den-apartment-near-carleton-univ-all-incl/579202716",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:15:26"
+	},
+	{
+		"url": "/v-3-bedroom-apartments-condos/ottawa/glebe-annex-1-2-price-900-for-june/594051239",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:13:26",
+		"tag": "log",
+		"log": [
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "12:53:26",
+				"page": 2
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:13:43",
+				"visits": 1
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:13:51",
+				"visits": 1
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:13:54",
+				"visits": 1
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:14:11",
+				"visits": 1
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:14:14",
+				"visits": 1
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:14:22",
+				"visits": 1
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:27:08",
+				"visits": 2
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:47:00",
+				"visits": 11
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:47:00",
+				"status": "deleted"
+			}
+		],
+		"lat": "45.4040215",
+		"lng": "-75.7031311"
+	},
+	{
+		"url": "/v-1-bedroom-apartments-condos/ottawa/july-1-and-2-bedrooms-somerset-towers/593440674",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:08:26"
+	},
+	{
+		"url": "/v-1-bedroom-apartments-condos/ottawa/great-location-and-great-price-july/581691317",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:08:26"
+	},
+	{
+		"url": "/v-bachelor-studio-apartments-condos/ottawa/upscale-private-furnishd-ensuite-w-house-cleaning-bank-hero/594048484",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:03:26"
+	},
+	{
+		"url": "/v-1-bedroom-apartments-condos/ottawa/upscale-private-furnishd-ensuite-w-house-cleaning-bank-hero/594048380",
+		"date": "Sunday, May 18, 2014",
+		"time": "12:03:26",
+		"tag": "log",
+		"log": [
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "12:53:26",
+				"page": 2
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:13:36",
+				"visits": 8
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:13:47",
+				"visits": 8
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:14:05",
+				"visits": 8
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:14:30",
+				"visits": 8
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:26:57",
+				"visits": 11
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:27:01",
+				"visits": 11
+			},
+			{
+				"date": "Sunday, May 18, 2014",
+				"time": "13:47:04",
+				"status": "deleted"
+			}
+		],
+		"lat": "45.377804",
+		"lng": "-75.6563779"
+	},
+	{
+		"url": "/v-1-bedroom-den-apartments-condos/ottawa/inclu-chauffe-eclaire-internet-electro/594046382",
+		"date": "Sunday, May 18, 2014",
+		"time": "11:56:26"
+	}
+]
