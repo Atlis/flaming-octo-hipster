@@ -86,7 +86,7 @@ function writeJSON(ad) {
 }
 
 var city = "ville-de-montreal";
-var filePath = os.type() == 'Windows_NT' ? "" : "/root/";
+var filePath = system.os.name == 'windows' ? "" : "/root/";
 var adsListFile =  filePath + "ads-" + city + ".txt";
 var adsList = readJSON(adsListFile);
 var count = adsList.length;
