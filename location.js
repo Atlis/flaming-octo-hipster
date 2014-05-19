@@ -134,11 +134,18 @@ var adsListFile =  filePath + "ads-" + city + ".json";
 var adsList = readJSON(adsListFile);
 var count = adsList.length;
 
+
+// Chooses the ad to log according to an exponential decay function.
+// So it log recent ads more often then old ones.
+// The n parameter as to be set correctly.
+// The smaller it is, the more are recent ads going to be logged.
+// On the contrary, the larger it is, the more are old ads going to be logged.
+var n = 20; // (10)
 for (var i = 0; i < count; ++i) {
     var ad = adsList[i];
     if (typeof(ad.tag) == 'undefined' || ad.tag == null) {} else {
         if (ad.tag.indexOf("log") > -1) {
-            if (getRandomInt(0, 9) == 0) {
+            if (getRandomInt(0, n - 1) == 0) {
                 timeOut(ad);
                 break;
             }
@@ -147,7 +154,9 @@ for (var i = 0; i < count; ++i) {
     if (i == count - 1) phantom.exit();
 }
 
-/* for (var i = 0; i < 100; ++i) {
+/*
+// Chooses the ads to log accroding to a flat function. 
+for (var i = 0; i < 100; ++i) {
     var ad = adsList[getRandomInt(0, count-1)];
     if (typeof(ad.tag) == 'undefined' || ad.tag == null) {} else {
         if (ad.tag.indexOf("log") > -1) {
@@ -156,9 +165,3 @@ for (var i = 0; i < count; ++i) {
         }
     }
 } */
-
-
-
-
-
-
