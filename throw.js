@@ -4,7 +4,7 @@ var app     = express();
 
 app.get('/scrape', function(req, res){
     var content;
-    fs.readFile('./data/ads-ville-de-montreal.json', function read(err, data) {
+    fs.readFile('/root/data/ads-ville-de-montreal.json', function read(err, data) {
         if (err) throw err;
         res.header("Content-Type", "text/plain");
         res.send(data);

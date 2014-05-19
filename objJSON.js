@@ -156,7 +156,7 @@ city.code = 1700281;
 //city.name = "ottawa";
 //city.code = 185;
 
-var filePath = os.type() == 'Windows_NT' ? "./data/" : "./data/";
+var filePath = os.type() == 'Windows_NT' ? "./data/" : "/root/data/";
 var fileName = filePath + "ads-" + city.name + ".json";
 
 timeOut();
