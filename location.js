@@ -3,6 +3,7 @@
 var system = require('system');
 var fs = require('fs');
 var page = require('webpage').create();
+var random = require('./random');
 
 
 // DATE AND TIME FUNCTIONS
@@ -21,12 +22,34 @@ function getTime(date) {
 
 
 // RANDOM FUNCTIONS
-var random = require('./random');
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function randomTargetTime(minTime, targetTime, maxTime) {
+    var i = 0;
+    while (i < 100) {
+        var seed = Math.ceil(Math.random()*10000);
+        var rand = new random.Random(seed);
+        // Random.weibull(Scale, Shape)
+        var randomTime = rand.weibull(targetTime, 2);
+        // Applies bounds
+        if (randomTime > minTime && randomTime < maxTime) {
+            return randomTime*1000;
+        }
+        i ++;
+        console.log(i);
+    }
+    console.log('Error: Too many iterations.');
+}
+
+function timeOut(ad) {
+    var targetTime = system.os.name == 'windows' ? randomTargetTime(2, 3, 5) : randomTargetTime(5, 30, 55);
+    setTimeout(function() {
+        visitAd(ad);
+    }, targetTime);
+}
 
 
 // Reads a JSON file and outputs the object.
@@ -57,6 +80,8 @@ function visitAd(ad) {
             var visits = parseInt($(".ad-visits").text());
             var lat = $("meta[property='og:latitude']").attr("content");
             var lng = $("meta[property='og:longitude']").attr("content");
+            
+            
             var data = {};
             data.visits = visits;
             data.lat = lat;
@@ -67,12 +92,18 @@ function visitAd(ad) {
         // Creates a log.
         var log = {};
         var now = new Date();
-        if (typeof(data.visits) == 'undefined' || data.visits == null ||
-            typeof(data.lat) == 'undefined' || data.lat == null ||
+        if (typeof(data.lat) == 'undefined' || data.lat == null ||
             typeof(data.lng) == 'undefined' || data.lng == null) {
             log.date = getDate(now);
             log.time = getTime(now);
             log.status = "deleted";
+            data.log = null;
+        }
+        else if (typeof(data.visits) == 'undefined' || data.visits == null) {
+            log.date = getDate(now);
+            log.time = getTime(now);
+            log.status = "novisists";
+            data.log = null;
         } else {
             if (typeof(ad.lat) == 'undefined' || ad.lat == null) ad.lat = data.lat;
             if (typeof(ad.lng) == 'undefined' || ad.lng == null) ad.lng = data.lng;
@@ -109,15 +140,8 @@ for (var i = 0; i < 100; ++i) {
     var ad = adsList[getRandomInt(0, count-1)];
     if (typeof(ad.tag) == 'undefined' || ad.tag == null) {} else {
         if (ad.tag.indexOf("log") > -1) {
-            if (typeof(ad.log) == 'undefined' || ad.log == null) {
-                visitAd(ad);
-                break;
-            } else {
-                if (ad.log[ad.log.length - 1].status != 'deleted') {
-                    visitAd(ad);
-                    break;
-                }
-            }
+            timeOut(ad);
+            break;
         }
     }
 }
