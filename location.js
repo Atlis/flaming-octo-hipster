@@ -74,50 +74,54 @@ function visitAd(ad) {
     var url = "http://www.zkzizjzizjzi.ca".replace(/z/g,"");
     page.open(url + ad.url, function() {
         page.includeJs("http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js", function() {
-
-        // Scrape the ad page for the number of visits and the location (latitude, longitude).
-        var data = page.evaluate(function() {
-            var visits = parseInt($(".ad-visits").text());
-            var lat = $("meta[property='og:latitude']").attr("content");
-            var lng = $("meta[property='og:longitude']").attr("content");
             
-            var data = {};
-            data.visits = visits;
-            data.lat = lat;
-            data.lng = lng;
-            return data;
-        });
+            // Waits 5 seconds before logging.
+            setTimeout(function() {
+                // Logs the ad page for the number of visits and the location (latitude, longitude).
+                var data = page.evaluate(function() {
+                    var visits = parseInt($(".ad-visits").text());
+                    var lat = $("meta[property='og:latitude']").attr("content");
+                    var lng = $("meta[property='og:longitude']").attr("content");
+                    
+                    var data = {};
+                    data.visits = visits;
+                    data.lat = lat;
+                    data.lng = lng;
+                    return data;
+                });
+                
+                // Creates a log.
+                var log = {};
+                var now = new Date();
+                if (typeof(data.lat) == 'undefined' || data.lat == null ||
+                    typeof(data.lng) == 'undefined' || data.lng == null) {
+                    log.date = getDate(now);
+                    log.time = getTime(now);
+                    log.status = "removed";
+                    ad.tag = null;
+                }
+                else if (typeof(data.visits) == 'undefined' || data.visits == null) {
+                    log.date = getDate(now);
+                    log.time = getTime(now);
+                    log.status = "cannot log visists";
+                    ad.tag = null;
+                } else {
+                    if (typeof(ad.lat) == 'undefined' || ad.lat == null) ad.lat = data.lat;
+                    if (typeof(ad.lng) == 'undefined' || ad.lng == null) ad.lng = data.lng;
+                    log.date = getDate(now);
+                    log.time = getTime(now);
+                    log.visits = data.visits;
+                }
 
-        // Creates a log.
-        var log = {};
-        var now = new Date();
-        if (typeof(data.lat) == 'undefined' || data.lat == null ||
-            typeof(data.lng) == 'undefined' || data.lng == null) {
-            log.date = getDate(now);
-            log.time = getTime(now);
-            log.status = "removed";
-            ad.tag = null;
-        }
-        else if (typeof(data.visits) == 'undefined' || data.visits == null) {
-            log.date = getDate(now);
-            log.time = getTime(now);
-            log.status = "cannot log visists";
-            ad.tag = null;
-        } else {
-            if (typeof(ad.lat) == 'undefined' || ad.lat == null) ad.lat = data.lat;
-            if (typeof(ad.lng) == 'undefined' || ad.lng == null) ad.lng = data.lng;
-            log.date = getDate(now);
-            log.time = getTime(now);
-            log.visits = data.visits;
-        }
+                // Saves the log.
+                if (typeof(ad.log) == 'undefined' || ad.log == null) ad.log = [];
+                ad.log.push(log);
 
-        // Saves the log.
-        if (typeof(ad.log) == 'undefined' || ad.log == null) ad.log = [];
-        ad.log.push(log);
-
-        // Save the ad.
-        writeJSON(ad);
-        });
+                // Save the ad.
+                writeJSON(ad);
+                });
+            }, 5000);
+            
     });
 }
 
