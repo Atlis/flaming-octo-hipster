@@ -81,7 +81,6 @@ function visitAd(ad) {
             var lat = $("meta[property='og:latitude']").attr("content");
             var lng = $("meta[property='og:longitude']").attr("content");
             
-            
             var data = {};
             data.visits = visits;
             data.lat = lat;
@@ -96,13 +95,13 @@ function visitAd(ad) {
             typeof(data.lng) == 'undefined' || data.lng == null) {
             log.date = getDate(now);
             log.time = getTime(now);
-            log.status = "deleted";
+            log.status = "removed";
             ad.tag = null;
         }
         else if (typeof(data.visits) == 'undefined' || data.visits == null) {
             log.date = getDate(now);
             log.time = getTime(now);
-            log.status = "novisists";
+            log.status = "cannot log visists";
             ad.tag = null;
         } else {
             if (typeof(ad.lat) == 'undefined' || ad.lat == null) ad.lat = data.lat;

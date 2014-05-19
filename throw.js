@@ -2,7 +2,7 @@ var express = require('express');
 var fs = require('fs');
 var app     = express();
 
-app.get('/scrape', function(req, res){
+app.get('/ville-de-montreal', function(req, res){
     var content;
     fs.readFile('/root/data/ads-ville-de-montreal.json', function read(err, data) {
         if (err) throw err;
