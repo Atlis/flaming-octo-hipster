@@ -44,15 +44,17 @@ function randomTargetTime(minTime, targetTime, maxTime) {
 }
 
 function timeOut() {
+    var targetTime = os.type() == 'Windows_NT' ? randomTargetTime(2, 3, 5) : randomTargetTime(5, 30, 55);
+    var startPage = os.type() == 'Windows_NT' ? 3 : getRandomInt(10, 20);
     setTimeout(function() {
-        listingAds(7, fileName);
-    }, randomTargetTime(2, 5, 10));
+        listingAds(startPage, fileName);
+    }, targetTime);
 }
 
 
 // Scrape the first pages of a category to save the newest ads.
 function listingAds(page, file) {
-    // Stops listing after 5 pages.
+    
     if (page == 0) return;
     
     var adsList = JSON.parse(fs.readFileSync(file));
