@@ -135,8 +135,8 @@ var adsListFile =  filePath + "ads-" + city + ".json";
 var adsList = readJSON(adsListFile);
 var count = adsList.length;
 
-i = 0;
-for (var i = 0; i < 100; ++i) {
+
+/* for (var i = 0; i < 100; ++i) {
     var ad = adsList[getRandomInt(0, count-1)];
     if (typeof(ad.tag) == 'undefined' || ad.tag == null) {} else {
         if (ad.tag.indexOf("log") > -1) {
@@ -144,4 +144,20 @@ for (var i = 0; i < 100; ++i) {
             break;
         }
     }
+} */
+
+
+for (var i = 0; i < count; ++i) {
+    var ad = adsList[i];
+    if (typeof(ad.tag) == 'undefined' || ad.tag == null) {} else {
+        if (ad.tag.indexOf("log") > -1) {
+            if (getRandomInt(0, 9) == 0) {
+                timeOut(ad);
+                break;
+            }
+        }
+    }
 }
+
+
+
