@@ -97,13 +97,13 @@ function visitAd(ad) {
             log.date = getDate(now);
             log.time = getTime(now);
             log.status = "deleted";
-            data.log = null;
+            ad.tag = null;
         }
         else if (typeof(data.visits) == 'undefined' || data.visits == null) {
             log.date = getDate(now);
             log.time = getTime(now);
             log.status = "novisists";
-            data.log = null;
+            ad.tag = null;
         } else {
             if (typeof(ad.lat) == 'undefined' || ad.lat == null) ad.lat = data.lat;
             if (typeof(ad.lng) == 'undefined' || ad.lng == null) ad.lng = data.lng;
