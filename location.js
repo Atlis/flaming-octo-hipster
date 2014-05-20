@@ -6,6 +6,12 @@ var page = require('webpage').create();
 var random = require('./random');
 
 
+setTimeout(function() {
+    phantom.exit();
+}, 60000);
+
+
+
 // DATE AND TIME FUNCTIONS
 function pad(num, size) {
     var s = "000000000" + num;
@@ -45,7 +51,7 @@ function randomTargetTime(minTime, targetTime, maxTime) {
 }
 
 function timeOut(ad) {
-    var targetTime = system.os.name == 'windows' ? randomTargetTime(2, 3, 5) : randomTargetTime(5, 30, 55);
+    var targetTime = system.os.name == 'windows' ? randomTargetTime(2, 3, 5) : randomTargetTime(5, 15, 30);
     setTimeout(function() {
         visitAd(ad);
     }, targetTime);
