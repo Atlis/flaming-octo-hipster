@@ -79,25 +79,22 @@ function visitAd(ad) {
             setTimeout(function() {
                 // Logs the ad page for the number of visits and the location (latitude, longitude).
                 var data = page.evaluate(function() {
-                    var visits = parseInt($(".ad-visits").text().replace(/,/g, ""));
-                    var lat = $("meta[property='og:latitude']").attr("content");
-                    var lng = $("meta[property='og:longitude']").attr("content");
-                    var expired = $(".expired-ad-container").length ? true : false;
                     var data = {};
-                    data.visits = visits;
-                    data.lat = lat;
-                    data.lng = lng;
+                    data.visits = parseInt($(".ad-visits").text().replace(/,/g, ""));
+                    data.lat = $("meta[property='og:latitude']").attr("content");
+                    data.lng = $("meta[property='og:longitude']").attr("content");
+                    data.expired = $(".expired-ad-container").length ? true : false;
                     return data;
                 });
                 
                 // Creates a log.
                 var log = {};
                 var now = new Date();
-                if (expired) {
+                if (data.expired) {
                     log.date = getDate(now);
                     log.time = getTime(now);
-                    log.status = "removed";
-                    ad.tag = null;
+                    log.status = "expired";
+                    ad.tag = "expired";
                 }
                 else if (typeof(data.visits) == 'undefined' || data.visits == null) {
                     log.date = getDate(now);
