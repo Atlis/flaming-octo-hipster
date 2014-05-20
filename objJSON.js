@@ -125,7 +125,15 @@ function listingAds(page, file) {
                         // One out of n ads will be logged.
                         // The chosen ads receive a log tag so it is possible to trace them back.
                         var n = 20;
-                        if (getRandomInt(0, n - 1) == 0) data.tag = "log";
+                        if (getRandomInt(0, n - 1) == 0) {
+                            data.tag = "log";
+                            data.log = [];
+                            var log = {};
+                            log.date = getDate(now);
+                            log.time = getTime(now);
+                            log.page = page;
+                            data.log.push(log);
+                        }
                         
                         // The new ad is added at the top of the array.
                         adsList.unshift(data);

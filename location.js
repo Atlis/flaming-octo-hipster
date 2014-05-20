@@ -79,10 +79,10 @@ function visitAd(ad) {
             setTimeout(function() {
                 // Logs the ad page for the number of visits and the location (latitude, longitude).
                 var data = page.evaluate(function() {
-                    var visits = parseInt($(".ad-visits").text());
+                    var visits = parseInt($(".ad-visits").text().replace(/,/g, ""));
                     var lat = $("meta[property='og:latitude']").attr("content");
                     var lng = $("meta[property='og:longitude']").attr("content");
-                    
+                    var expired = $(".expired-ad-container").length ? true : false;
                     var data = {};
                     data.visits = visits;
                     data.lat = lat;
@@ -93,8 +93,7 @@ function visitAd(ad) {
                 // Creates a log.
                 var log = {};
                 var now = new Date();
-                if (typeof(data.lat) == 'undefined' || data.lat == null ||
-                    typeof(data.lng) == 'undefined' || data.lng == null) {
+                if (expired) {
                     log.date = getDate(now);
                     log.time = getTime(now);
                     log.status = "removed";
@@ -103,8 +102,10 @@ function visitAd(ad) {
                 else if (typeof(data.visits) == 'undefined' || data.visits == null) {
                     log.date = getDate(now);
                     log.time = getTime(now);
-                    log.status = "cannot log visists";
-                    ad.tag = null;
+                    log.status = "cannot log visits";
+                    // Althought the visits info isn't there, it might get back later.
+                    // So we go on with logging.
+                    //ad.tag = null;
                 } else {
                     if (typeof(ad.lat) == 'undefined' || ad.lat == null) ad.lat = data.lat;
                     if (typeof(ad.lng) == 'undefined' || ad.lng == null) ad.lng = data.lng;
